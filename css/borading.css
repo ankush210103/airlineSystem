@@ -1,0 +1,46 @@
+body{
+    background-image: url('../images/AIR-INDIA.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.parent{
+    margin: auto;
+    height: auto;
+    width: 30vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(255, 255, 255);
+}
+.logo{
+    height: 8%;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(233, 230, 230);
+    border-left:5px solid #C5012D;
+
+}
+input{
+    border:0px solid;
+    width: 0px;
+    font-size: 1.3rem;
+    border-bottom:1.5px solid #C5012D;
+    outline: none;
+}
+label{
+    margin-top:2%;
+}
+.myform{
+    font-size: 1.4rem;
+}
+@media only screen and (max-width: 1000px) {
+    .parent{
+        width: 90vw;
+    }
+    .myform{
+        font-size: 400%;
+        height: 100%;
+    }
+    input{
+        font-size: 120%;
+    }
+  }
