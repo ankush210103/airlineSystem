@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Air India</title>
+        <link rel="stylesheet" href="../css/borading.css">
+        <script src="../script/boarding.js"></script>
+    </head>
+    <body>
+        <div class="parent">
+            <div class="logo">
+                <img src="../images/Air.png" alt='Air.png' height="90%" width="40%" style="background-color: rgba(255, 255, 255, 0);display: inline;">
+                <span style="background-color: rgba(255, 255, 255, 0);font-size: 2rem;float:right;padding-right: 5px;">Boarding Pass</span>
+            </div>
+            <form class="myform" onsubmit="generate()" method="POST" style="margin: 2%;background-color: rgba(240, 255, 255, 0);">
+                <fieldset style="background-color: rgba(240, 255, 255, 0);border: 2px solid #C5012D;">
+                 <legend><strong>Passenger Details</strong></legend>
+                 <label for="name">Passenger Name</label><br>
+                 <input oninput="namefun()" onfocus="mouseDown(this)" onblur="mouseUp(this)" style="width: 100%;" va type="text" id="name" name="name"><br>
+
+                    <label>Gender</label>
+                    <input style="width: 20px;" type="radio" id="male" name="gender" value="Male">
+                    <label  for="male">Male</label>
+                    <input style="width: 20px;" type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                    <input style="width: 20px;"  type="radio" id="other" name="gender" value="Others">
+                    <label for="other">Other</label><br>
+
+                 <label for="age">Age</label>
+                 <input oninput="agecheck()" style="width:20%;" onfocus="mouseDown(this)" onblur="mouseUp(this)" type="number" id="age" name="age" min="0" max="120"><br>
+                </fieldset > 
+                <fieldset style="background-color: rgba(240, 255, 255, 0);border: 2px solid #C5012D;">
+                    <legend><strong>Flight Details</strong></legend>
+                    <label for="class">Name of Class</label><br>
+                    <input oninput="classcheck()" onfocus="mouseDown(this)" onblur="mouseUp(this)" style="width: 100%;" type="text" id="class" name="class"><br>
+                    <label for="fnum">Flight Number</label><br>
+                    <input oninput="fnumcheck()" onfocus="mouseDown(this)" onblur="mouseUp(this)" style="width: 100%;" type="text" id="fnum" name="fnum"><br>
+                    <label for="date">Flight Date:</label>
+                    <input oninput="datecheck()" type="date" style="width: 70%;"id="date" name="date"><br>
+                    <label for="from">From</label>
+                    <input oninput="fromcheck()" onfocus="mouseDown(this)" onblur="mouseUp(this)" style="width: 85.2%;" type="text" id="from" name="from"><br>
+                    <label for="to">To</label>
+                    <input oninput="tocheck()" onfocus="mouseDown(this)" onblur="mouseUp(this)" style="width: 91.5%;" type="text" id="to" name="to"><br>
+
+                    <label for="gate">Gate No: </label>
+                    <input oninput="gatecheck()" style="width:25%;" onfocus="mouseDown(this)" onblur="mouseUp(this)" type="number" id="gate" name="gate" min="0" max="50">
+                    <label for="seat">Seat No: </label>
+                    <input oninput="seatcheck()" style="width:27%;" onfocus="mouseDown(this)" onblur="mouseUp(this)" type="number" id="seat" name="seat" min="0" max="150"><br>
+
+                    <label for="time">Boarding Time</label>
+                    <input oninput="timecheck()" style="width: 63%;" onfocus="mouseDown(this)" onblur="mouseUp(this)" type="time" id="time" name="time"><br>
+                    <label for="rem">Remarks</label><br>
+                    <input oninput="remcheck()" onfocus="mouseDown(this)" onblur="mouseUp(this)" style="width: 100%;" type="text" id="rem" name="rem"><br>
+                    <label for="obs">Observation</label><br>
+                    <input oninput="obscheck()" onfocus="mouseDown(this)" onblur="mouseUp(this)" style="width: 100%;" type="text" id="obs" name="obs"><br>
+                </fieldset> 
+                <p id="error" style="font-size:1em;margin:auto;text-align:center;background-color:rgb(28, 128, 45);margin: 2%;color:white">Fill the DETAILS</p>  
+                <input type="reset" value="Clear" style="background-color: rgba(230, 18, 18, 0.877);color: #ffffff;cursor: pointer;margin-bottom: 3%;width: auto;">       
+                <input id="final"  type="button" onclick="generatepass()"  value="Generate Pass" style="background-color: rgba(13, 148, 13, 0.979);float:right;color: #ffffff;cursor: pointer;width: auto;">
+
+               </form>
+        </div>
+    </body>
+
+</html>

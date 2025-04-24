@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Bookings</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="../css/discover.css">
+      <script src="../script/discover.js"></script>
+
+
+</head>
+<body style="background-color: #ffffff;"onload="myFunction()">
+<div id="loading" style="position: fixed;width: 90%;height: 90vh;background: #fff url("./images/inf.gif") no-repeat center; z-index: 9999"></div>
+
+<nav class="navbar navbar-light navbar-expand-md sticky-top shadow navigation-clean" style="background: rgba(255,255,255,0.85);">
+  <div class="container"><img class="float-left" src="../images/Air.png" width="90px" height="30px" loading="lazy" style="margin-top: -14px;margin-left: 2px;margin-right: 22px;" /><a class="navbar-brand" href="#">Air india</a>
+    <button data-toggle="collapse" data-target="#navcol-1"class="navbar-toggler"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navcol-1">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link active" href="../views/locations.html">Discover</a></li>
+                <li class="nav-item"><a class="nav-link" href="../views/ticket.html">Book </a></li>
+                <li class="nav-item"><a class="nav-link" href="../views/bookings.html">Journey</a></li>
+                <li class="nav-item dropdown"><a data-toggle="dropdown" aria-expanded="false" class="dropdown-toggle nav-link" href="#">Account</a>
+                    <div class="dropdown-menu"><a class="dropdown-item" href="#">Profile</a><a class="dropdown-item" href="#">Transactions</a><a class="dropdown-item" href="#">Third Item</a></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container d-flex align-items-xl-center" style="height: 403px;margin-top: 38px;margin-left: 161px; width: 100vw;">
+    <h1 style="margin-bottom: 1px;">Discover India</h1>
+   
+    <div class="main shadow d-flex align-items-xl-end" style="height: 382px;background: url('../images/Taj-Mahal-Delhi-India-1024x679.webp');background-size: 100% 100%;;width: 33%;border-top-left-radius: 29px;border-bottom-right-radius: 29px;margin-left: 25px;">
+        <div class="pop" style="height: 20%;background: rgba(204, 245, 247, 0.767);border-bottom-right-radius: 29px;margin-left: 0px;width: 100%;">
+            <h5 style="margin-top: 0px;padding-top: 5px;padding-left: 6px;">Delhi starting</h5>
+            <h5 style="margin-top: 0px;padding-top: 5px;padding-left: 6px;">
+                <i class="fa fa-rupee" style="font-size: 28px;"></i>   56249</h5>
+        </div>
+    </div>
+
+    <div class="main1 shadow d-flex align-items-xl-end" style="height: 382px;background: url('../images/amritsar.jpg');background-size: 100% 100%;;width: 33%;border-top-left-radius: 29px;border-bottom-right-radius: 29px;margin-left: 25px;">
+        <div class="pop1" style="height: 20%;background: rgba(204, 245, 247, 0.767);border-bottom-right-radius: 29px;margin-left: 0px;width: 100%;">
+            <h5 style="margin-top: 0px;padding-top: 5px;padding-left: 6px;">Amritsar starting</h5>
+            <h5 style="margin-top: 0px;padding-top: 5px;padding-left: 6px;">
+                <i class="fa fa-rupee" style="font-size: 28px;"></i>  95648</h5>
+        </div>
+    </div>
+
+    <div class="main2 shadow d-flex align-items-xl-end" style="height: 382px;background: url('../images/rajasthan.jpg');background-size: 100% 100%;;width: 33%;border-top-left-radius: 29px;border-bottom-right-radius: 29px;margin-left: 25px;">
+        <div class="pop2" style="height: 20%;background: rgba(204, 245, 247, 0.767);border-bottom-right-radius: 29px;margin-left: 0px;width: 100%;">
+            <h5 style="margin-top: 0px;padding-top: 5px;padding-left: 6px;">Rajasthan starting</h5>
+            <h5 style="margin-top: 0px;padding-top: 5px;padding-left: 6px;">
+                <i class="fa fa-rupee" style="font-size: 28px;"></i>  32659</h5>
+        </div>
+    </div>
+    
+</div>
+
+<div class="container d-flex align-items-xl-center" style="height: 403px;margin-top: 38px;margin-left: 161px; width: 100vw;">
+    <h1 style="margin-bottom: 1px;">Discover World</h1>
+   
+    <div class="main3 shadow d-flex align-items-xl-end" style="height: 382px;background: url('../images/original.jpg');background-size: 100% 100%;;width: 33%;border-top-left-radius: 29px;border-bottom-right-radius: 29px;margin-left: 25px;">
+        <div class="pop3" style="height: 20%;background: rgba(204, 245, 247, 0.767);border-bottom-right-radius: 29px;margin-left: 0px;width: 100%;">
+            <h5 style="margin-top: 0px;padding-top: 5px;padding-left: 6px;">Sydney starting</h5>
+            <h5 style="margin-top: 0px;padding-top: 5px;padding-left: 6px;">
+                <i class="fa fa-rupee" style="font-size: 28px;"></i>   56249</h5>
+        </div>
+    </div>
+
+    <div class="main4 shadow d-flex align-items-xl-end" style="height: 382px;background: url('../images/scale.jpg');background-size: 100% 100%;;width: 33%;border-top-left-radius: 29px;border-bottom-right-radius: 29px;margin-left: 25px;">
+        <div class="pop4" style="height: 20%;background: rgba(204, 245, 247, 0.767);border-bottom-right-radius: 29px;margin-left: 0px;width: 100%;">
+            <h5 style="margin-top: 0px;padding-top: 5px;padding-left: 6px;">Japan starting</h5>
+            <h5 style="margin-top: 0px;padding-top: 5px;padding-left: 6px;">
+                <i class="fa fa-rupee" style="font-size: 28px;"></i>  95648</h5>
+        </div>
+    </div>
+
+    <div class="main5 shadow d-flex align-items-xl-end" style="height: 382px;background: url('../images/photo-1513415564515-763d91423bdd.jpg');background-size: 100% 100%;;width: 33%;border-top-left-radius: 29px;border-bottom-right-radius: 29px;margin-left: 25px;">
+        <div class="pop5" style="height: 20%;background: rgba(204, 245, 247, 0.767);border-bottom-right-radius: 29px;margin-left: 0px;width: 100%;">
+            <h5 style="margin-top: 0px;padding-top: 5px;padding-left: 6px;">Korea starting</h5>
+            <h5 style="margin-top: 0px;padding-top: 5px;padding-left: 6px;">
+                <i class="fa fa-rupee" style="font-size: 28px;"></i>  32659</h5>
+        </div>
+    </div>
+    
+</div>
+
+
+<footer class="footer" style="background-color: aliceblue;">
+    <div class="container">
+        <div class="row">             
+            <div class="col-5 offset-1 col-sm-2">
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="./aboutus.html">About</a></li>
+                    <li><a href="./contactus.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-sm-5"> 
+                <h5>Our Address</h5>
+                <address>
+                  Air India Corporate Office<br>
+                  Phagwara, Punjab<br>
+                  India<br>
+                  <i class="fa fa-phone fa-lg"></i>: +91 45678913<br>
+                  <i class="fa fa-fax fa-lg"></i>: +91 445577521<br>
+                  <i class="fa fa-envelope fa-lg"></i>: 
+                  <a href="mailto:renting.system@gmail.com">airIndia@help</a>
+               </address>
+            </div>
+            <div class="col col-sm-4 align-self-center">
+                <div style="text-align:center">
+                    <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                    <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                </div>
+            </div>
+       </div>
+       <div class="row justify-content-center">             
+            <div class="col-auto">
+                <p>© Copyright 2020 Air India</p>
+            </div>
+       </div>
+    </div>
+</footer>
+<script>
+    var preloder=document.getElementById("loading");
+    console.log(document.documentURI)
+    function myFunction() {
+        preloder.style.display="none";
+    }
+
+</script>
+</body>
+</html>
